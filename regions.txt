@@ -1,0 +1,33 @@
+continents
+
+ Africa
+ Antarctica
+ Asia
+ Australia and Oceania
+ Central America
+ Europe
+ North America
+ South America
+
+
+countries
+
+ Africa
+ Antarctica
+ Asia
+ Australia and Oceania
+ Central America
+ Europe
+ North America
+  Hawaii
+ South America
+  Argentina
+  Bolivia
+  Brazil
+  Chile
+  Colombia
+  Ecuador
+  Paraguay
+  Peru
+  suriname
+  Uruguay

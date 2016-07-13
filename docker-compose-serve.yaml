@@ -1,0 +1,10 @@
+version: '2'
+services:  
+  style:
+    image: xingfuryda/osm-style
+    volumes:
+     - "/c/Users/projects:/home/root/projects"
+    ports:
+     - "3000:3000"
+     - "8080:8080"
+    command: serve

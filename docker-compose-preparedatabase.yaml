@@ -1,0 +1,12 @@
+version: '2'
+services:
+  store:
+    image: xingfuryda/osm-store
+    environment:
+      POSTGRES_PASSWORD: password1
+  load:
+    image: xingfuryda/osm-load    
+    environment:
+      OSM_IMPORT_CACHE: 1500 # set to 75% of memory in MB
+      PBF_URL: http://download.geofabrik.de/north-america/us/hawaii-latest.osm.pbf
+    command: runimport

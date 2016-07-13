@@ -1,0 +1,13 @@
+version: '2'
+services:
+  store:
+    image: xingfuryda/osm-store
+    environment:
+      POSTGRES_PASSWORD: password1  
+  style:
+    image: xingfuryda/osm-style    
+    volumes:
+     - "/c/Users/projects:/home/root/projects"
+    ports:
+     - "3000:3000"
+    command: preparestyling  
