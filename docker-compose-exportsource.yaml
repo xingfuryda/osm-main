@@ -11,8 +11,8 @@ services:
     ports:
      - "3000:3000"
     environment:
-      BOUNDS: -156.28,18.67,-154.55,20.49  # eg: -166.51,14.58,-148.94,27.07
-      MINZOOM: 0
+      BOUNDS: -156.36,18.69,-154.49,20.5    # eg: -166.51,14.58,-148.94,27.07
+      MINZOOM: 7
       MAXZOOM: 14
       FILENAME: Hawaii
     command: exportsource  

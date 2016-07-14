@@ -37,3 +37,14 @@ cp -r /usr/share/fonts/ /home/root/projects/fonts/
 
 source for tm2 project.yaml for when hosting mbtiles from tessera:
 source: http://localhost:8080/pbfs/live/index.json
+
+Windows hosting:
+ - Install nodejs 0.10.x x64 from https://nodejs.org/dist/latest-v0.10.x/x64/
+ - Install URL Rewrite from http://www.iis.net/download/URLRewrite
+ - Install iisnode x64 from https://github.com/azure/iisnode/releases/download/v0.2.21/iisnode-full-v0.2.21-x64.msi
+ - In webserver settings, supply the node.exe path to iis
+ - Create a hosting folder eg: c:\inetpub\wwwroot\tessera
+ - npm install the tessea modules as listed in osm-style\Dockerfile
+ - node.exe node_modules\tessera\bin\tessera.js xray+mbtiles:///Users/projects\Hawaii.mbtiles
+ - when hosting on iis, use a custom command in the web.config as mentioned at https://github.com/tjanczuk/iisnode/issues/315
+ - 

@@ -7,6 +7,6 @@ services:
   load:
     image: xingfuryda/osm-load    
     environment:
-      OSM_IMPORT_CACHE: 1500 # set to 75% of memory in MB
+      OSM_IMPORT_CACHE: 3000 # set to 75% of memory in MB
       PBF_URL: http://download.geofabrik.de/north-america/us/hawaii-latest.osm.pbf
     command: runimport
